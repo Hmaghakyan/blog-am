@@ -1,0 +1,286 @@
+{
+	"_type": "export",
+	"__export_format": 3,
+	"__export_date": "2019-02-01T14:29:21.240Z",
+	"__export_source": "insomnia.desktop.app:v6.3.2",
+	"resources": [
+		{
+			"_id": "wrk_467c5d47115c4466ae76ce1e147a0533",
+			"created": 1545600928861,
+			"description": "",
+			"modified": 1548840027839,
+			"name": "Blog.am",
+			"parentId": null,
+			"_type": "workspace"
+		},
+		{
+			"_id": "env_fe586a2b182147c3a0e225bdb05cb858",
+			"color": null,
+			"created": 1545600929073,
+			"data": {
+				"baseURL": "http://localhost:3000"
+			},
+			"isPrivate": false,
+			"metaSortKey": 1545600929073,
+			"modified": 1545601809130,
+			"name": "New Environment",
+			"parentId": "wrk_467c5d47115c4466ae76ce1e147a0533",
+			"_type": "environment"
+		},
+		{
+			"_id": "jar_a0deaa68b58d433cbf8ab49b16764c32",
+			"cookies": [],
+			"created": 1545600929085,
+			"modified": 1545600929085,
+			"name": "Default Jar",
+			"parentId": "wrk_467c5d47115c4466ae76ce1e147a0533",
+			"_type": "cookie_jar"
+		},
+		{
+			"_id": "fld_dfbfc8d341cc4bab8219e66db1932830",
+			"created": 1548921153874,
+			"description": "",
+			"environment": {},
+			"metaSortKey": -1548921153874,
+			"modified": 1548921153874,
+			"name": "Images",
+			"parentId": "wrk_467c5d47115c4466ae76ce1e147a0533",
+			"_type": "request_group"
+		},
+		{
+			"_id": "fld_863bbe259b934e73ac65270e85ba9adb",
+			"created": 1548928947857,
+			"description": "",
+			"environment": {},
+			"metaSortKey": -1548928947857,
+			"modified": 1548928947857,
+			"name": "News",
+			"parentId": "wrk_467c5d47115c4466ae76ce1e147a0533",
+			"_type": "request_group"
+		},
+		{
+			"_id": "env_30334e04d03949f59be660e3106d743b",
+			"color": null,
+			"created": 1545602262663,
+			"data": {
+				"baseURL": "http://localhost:4004"
+			},
+			"isPrivate": false,
+			"metaSortKey": 1545602262663,
+			"modified": 1548840057028,
+			"name": "New",
+			"parentId": "env_fe586a2b182147c3a0e225bdb05cb858",
+			"_type": "environment"
+		},
+		{
+			"_id": "req_25f3dec2efca429398ea919f6cce74ad",
+			"authentication": {},
+			"body": {
+				"mimeType": "multipart/form-data",
+				"params": [
+					{
+						"fileName": "/Users/hovomaghakyan/Desktop/pic.PNG",
+						"id": "pair_70d9435ba5de4c30980be41f25059eab",
+						"name": "image",
+						"type": "file",
+						"value": ""
+					},
+					{
+						"id": "pair_a4a28c257b9f46b18e038fe1cc1ce86e",
+						"name": "alt",
+						"value": "asfxdrhxfgftch"
+					}
+				]
+			},
+			"created": 1545602020029,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_fa1a66cdb7754e319a6b0ceff962ee60",
+					"name": "Content-Type",
+					"value": "multipart/form-data"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1545602020029,
+			"method": "POST",
+			"modified": 1548945199066,
+			"name": "Add",
+			"parameters": [],
+			"parentId": "fld_dfbfc8d341cc4bab8219e66db1932830",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "{{ baseURL  }}/api/image/create",
+			"_type": "request"
+		},
+		{
+			"_id": "req_2a4d83ae08b74a6394bc61e9ef9dfec9",
+			"authentication": {},
+			"body": {},
+			"created": 1548921177579,
+			"description": "",
+			"headers": [],
+			"isPrivate": false,
+			"metaSortKey": -1545602019979,
+			"method": "DELETE",
+			"modified": 1548944695923,
+			"name": "Delete",
+			"parameters": [],
+			"parentId": "fld_dfbfc8d341cc4bab8219e66db1932830",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "{{ baseURL  }}/api/image/delete/1",
+			"_type": "request"
+		},
+		{
+			"_id": "req_2a6f62749fad44938897120ba644b3fb",
+			"authentication": {},
+			"body": {
+				"mimeType": "application/json",
+				"text": "{\n\t\"title\": \"dasdasdasqweqweqw\",\n\t\"description\": \"123213213123123\",\n\t\"image_id\": 7\n}"
+			},
+			"created": 1548928955798,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_62c0c071a2f44de5857962a0068f86c2",
+					"name": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1548925051015.5,
+			"method": "POST",
+			"modified": 1549017556929,
+			"name": "Add",
+			"parameters": [],
+			"parentId": "fld_863bbe259b934e73ac65270e85ba9adb",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "{{ baseURL  }}/api/news/create",
+			"_type": "request"
+		},
+		{
+			"_id": "req_4de177b4a8f84870a76e3fa80eabe56a",
+			"authentication": {},
+			"body": {},
+			"created": 1548928979881,
+			"description": "",
+			"headers": [],
+			"isPrivate": false,
+			"metaSortKey": -1548925050990.5,
+			"method": "DELETE",
+			"modified": 1548945078774,
+			"name": "Delete",
+			"parameters": [],
+			"parentId": "fld_863bbe259b934e73ac65270e85ba9adb",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "{{ baseURL  }}/api/news/delete/31",
+			"_type": "request"
+		},
+		{
+			"_id": "req_33f765e3e072490b98d584392fdf4f63",
+			"authentication": {},
+			"body": {
+				"mimeType": "application/json",
+				"text": "{\n\t\"id\": 32,\n\t\"title\": \"some STRING\",\n\t\"description\":\"aszdf string\",\n\t\"image_id\": 2\n}"
+			},
+			"created": 1548931476889,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_df96e1139a5148278a7a5ef4d7674344",
+					"name": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1548925050985.8125,
+			"method": "PUT",
+			"modified": 1549031217646,
+			"name": "Update",
+			"parameters": [],
+			"parentId": "fld_863bbe259b934e73ac65270e85ba9adb",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "{{ baseURL  }}/api/news/update",
+			"_type": "request"
+		},
+		{
+			"_id": "req_c57dbdee39924390bfc45842a6268653",
+			"authentication": {},
+			"body": {},
+			"created": 1549009621136,
+			"description": "",
+			"headers": [],
+			"isPrivate": false,
+			"metaSortKey": -1548925050971.75,
+			"method": "GET",
+			"modified": 1549031337314,
+			"name": "Single News",
+			"parameters": [],
+			"parentId": "fld_863bbe259b934e73ac65270e85ba9adb",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "{{ baseURL  }}/api/news/single/32",
+			"_type": "request"
+		},
+		{
+			"_id": "req_f180a76ad4fd4e339f27aa8d940581a0",
+			"authentication": {},
+			"body": {
+				"mimeType": "application/json",
+				"text": "{\n\t\"page\": 3,\n\t\"limit\": 3\n}"
+			},
+			"created": 1549014061547,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_f835060713a34e8d894a68d9490532c9",
+					"name": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1548925050981.125,
+			"method": "POST",
+			"modified": 1549029484375,
+			"name": "All News",
+			"parameters": [],
+			"parentId": "fld_863bbe259b934e73ac65270e85ba9adb",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "{{ baseURL  }}/api/news/all",
+			"_type": "request"
+		}
+	]
+}
